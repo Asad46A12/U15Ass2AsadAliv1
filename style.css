@@ -1,0 +1,258 @@
+:root{
+--blue:#1F0B73;
+--accent:#733030;
+--white:#ffffff;
+--black:#111111;
+--light:#f4f4f4;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:var(--white);
+color:var(--black);
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+background:var(--blue);
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+}
+
+.logo span{
+color:#cfc9ff;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+font-weight:500;
+}
+
+nav a:hover
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+gap:40px;
+background:linear-gradient(135deg,#ffffff,#f5f5ff);
+}
+
+.hero-content h1{
+font-size:48px;
+color:var(--blue);
+margin-bottom:20px;
+}
+
+.hero-content p{
+margin-bottom:20px;
+}
+
+.hero-image img{
+width:100%;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* BUTTONS */
+
+.btn{
+display:inline-block;
+background:var(--accent);
+color:white;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+transition:0.3s;
+margin:5px;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+background:#8c3f3f;
+}
+
+.secondary-btn{
+background:white;
+color:var(--blue);
+border:2px solid var(--blue);
+}
+
+.secondary-btn:hover{
+background:var(--blue);
+color:white;
+}
+
+/* SECTIONS */
+
+.section{
+padding:70px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+color:var(--blue);
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+border-top:4px solid var(--blue);
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-top:4px solid var(--accent);
+}
+
+/* MEMBERSHIP PRICE */
+
+.price{
+font-size:36px;
+color:var(--accent);
+margin:10px 0;
+}
+
+/* PAGE HEADER */
+
+.page-header{
+background:linear-gradient(135deg,var(--blue),var(--accent));
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+/* FORM */
+
+form{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+input, textarea, select{
+padding:12px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:14px;
+}
+
+button{
+padding:12px;
+border:none;
+background:var(--blue);
+color:white;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:var(--accent);
+}
+
+/* FOOTER */
+
+footer{
+background:var(--blue);
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+.footer-links{
+margin-bottom:10px;
+}
+
+.footer-links a{
+color:white;
+margin:0 8px;
+text-decoration:none;
+font-size:14px;
+}
+
+.footer-links a:hover
+
+/* CTA SECTIONS */
+
+.cta{
+background:linear-gradient(135deg,var(--blue),var(--accent));
+color:white;
+text-align:center;
+padding:80px 8%;
+}
+
+.cta h2{
+font-size:34px;
+margin-bottom:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:34px;
+}
+
+nav ul{
+justify-content:center;
+}
+
+}
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:10px;
+}
