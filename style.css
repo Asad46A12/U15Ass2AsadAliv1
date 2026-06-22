@@ -287,3 +287,35 @@ footer{
     margin-top:20px;
     font-size:0.9rem;
 }
+/* HAMBURGER MENU */
+
+.hamburger{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    .hamburger{
+        display:block;
+    }
+
+    nav{
+        display:none;
+        width:100%;
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
